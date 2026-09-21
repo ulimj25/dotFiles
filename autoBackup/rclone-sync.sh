@@ -29,9 +29,9 @@ for job in "${jobs[@]}"; do
     log "===Iniciando: ${source} -> ${remote}==="
 
     if rclone sync $source $remote \
-        --dry-run \
+        \
         --log-file "${LOG_FILE}" \
-        --log-level INFO; then
+        --log-level INFO; then #        --dry-run \
         log "==Éxito ${source} -> ${remote}=="
     else
         log "==Error al sincornizar ${source} -> ${remote} (Código $?)"
