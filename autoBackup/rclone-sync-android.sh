@@ -13,7 +13,7 @@ Remote=Gdrive
 jobs=(
     #"/home/ula/Drive/Bases|${Remote}:Bases"
     #"/home/ula/Drive/Documentos|${Remote}:Documentos"
-    "${ROOT_DIR}/home/Drive/Obsidian|${Remote}:Obsidian"
+    "${ROOT_DIR}/home/Drive/Obsidian|${Remote}:Obsidian/Personal"
     "${ROOT_DIR}/home/Drive/Libros|${Remote}:Libros"
     #"/home/ula/Drive/Recursos|${Remote}:Recursos"
 )
@@ -30,7 +30,6 @@ for job in "${jobs[@]}"; do
     log "===Iniciando: ${remote} -> ${source}==="
 
     if rclone sync $remote $source \
-        --dry-run \
         --log-file "${LOG_FILE}" \
         --log-level INFO; then
         log "==Éxito ${remote} -> ${source}=="
