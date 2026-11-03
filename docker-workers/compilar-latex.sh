@@ -16,7 +16,7 @@ fi
 
 docker run -i --rm \
     -v $PROJECT_DIR:/usr/src/app:z \
-    -v $CACHE_DIR:/usr/local/texlive/2026/texmf-var/luatex-cache:z \
+    -v $CACHE_DIR:/home/texlive/.texlive2026:z \
     -v $FONTS_DIR:/usr/local/share/fonts/host-sys:ro \
     -w /usr/src/app \
     -u $(id -u):$(id -g) \
