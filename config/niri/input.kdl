@@ -1,0 +1,27 @@
+input {
+    keyboard {
+        // Enable numlock on startup
+        numlock
+    }
+
+    touchpad {
+        tap
+        dwt
+        drag true
+        middle-emulation
+        natural-scroll
+        accel-profile "flat"
+        scroll-method "two-finger"
+        disabled-on-external-mouse
+    }
+
+    mouse {
+        accel-speed -0.5
+        accel-profile "flat"
+    }
+
+    focus-follows-mouse max-scroll-amount="50%"
+    workspace-auto-back-and-forth
+ 
+    mod-key "Super"
+}

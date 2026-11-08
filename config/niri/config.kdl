@@ -6,33 +6,7 @@
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Input
-input {
-    keyboard {
-        // Enable numlock on startup
-        numlock
-    }
-
-    touchpad {
-        tap
-        dwt
-        drag true
-        middle-emulation
-        natural-scroll
-        accel-profile "flat"
-        scroll-method "two-finger"
-        disabled-on-external-mouse
-    }
-
-    mouse {
-        accel-speed -0.5
-        accel-profile "flat"
-    }
-
-    focus-follows-mouse
-    workspace-auto-back-and-forth
- 
-    mod-key "Super"
-}
+include "input.kdl"
 
 // You can configure outputs by their name, which you can find
 // by running `niri msg outputs` while inside a niri instance.
