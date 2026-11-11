@@ -1,0 +1,14 @@
+language = es
+
+font-family = Iosevka Nerd Font
+font-size = 12
+
+theme = noctalia
+
+adjust-cursor-thickness = 2
+cursor-style = underline
+
+background-opacity = 0.8
+
+window-padding-x = 10
+window-padding-y = 10

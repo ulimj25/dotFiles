@@ -1,6 +1,6 @@
 binds {
 
-    Mod+T hotkey-overlay-title="Abrir terminal: alacritty" { spawn "alacritty"; }
+    Mod+T hotkey-overlay-title="Abrir terminal: alacritty" { spawn "ghostty"; }
     Mod+D hotkey-overlay-title="Abrir launcher noctalia" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
     Ctrl+Alt+Delete hotkey-overlay-title="Abir el panel de sesion" { spawn "noctalia" "msg" "panel-toggle" "session"; }
 
